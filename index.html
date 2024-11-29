@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .phone-container {
+            display: flex;
+            align-items: center;
+        }
+        .phone-prefix {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-right: none; /* Remove the right border */
+            background-color: #f9f9f9; /* Light background for the prefix */
+            height: 8px;
+            margin-right: 5px;
+            padding-right: 20px;
+        }
+        .phone-input {
+            border: 1px solid #ccc;
+            padding: 5px;
+            width: 100px;
+            height: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+        <legend>Personal Details</legend>
+    <form>
+      <div>
+        <label for="name">Firstname</label>
+        <input name="nam" id="name" type="text" size="15px"/>
+      </div>
+      <br />
+      <div>
+        <label for="name">Middlename:</label>
+        <input name="nam" id="name" type="text" size="15px" />
+      </div>
+      <br />
+      <div>
+        <label for="name">Lastname:</label>
+        <input name="nam" id="name" type="text" size="15px"/>
+      </div>
+      <br />
+      <div>
+        <label for="course">Course :</label>
+        <select name="course" id="course">
+          <option value="" default>Course</option>
+          <option value="">BCA</option>
+          <option value="">BBA</option>
+          <option value="">B.Tech</option>
+          <option value="">MBA</option>
+          <option value="">MCA</option>
+          <option value="">M.Tech</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="gender">Gender</label>
+        <br />
+        <input type="radio" name="ge" id="gender" /> Male
+        <br />
+        <input type="radio" name="ge" id="gender" /> Female
+        <br />
+        <input type="radio" name="ge" id="gender" /> Other
+      </div>
+      <br />
+      <div>
+        <label for="date">DOB</label>
+        <input type="datetime-local" name="da" id="date">
+      </div>
+    
+      <div class="phone-container">
+        <label for="contact">Phone: </label>
+        
+            <span class="phone-prefix">+91</span>
+            <input type="text" id="phone" class="phone-input" >
+
+        
+      </div>
+      <br />
+      <div>
+        <label for="address">Address</label>
+        <br>
+        <textarea style="border: 1px solid; border-radius: 4px;"  name="Address" id="Address" cols="80" rows="5"  ></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="email">Email: </label>
+        <input type="email" name="em" id="email"  />
+      </div>
+      <br />
+      <br />
+      <div>
+        <label for="password">Password: </label>
+        <input type="password" name="key" id="password" />
+      </div>
+      <br />
+      <br />
+      <div>
+        <label for="password">Re-type password: </label>
+        <input type="password" name="key" id="password" />
+      </div>
+      <br />
+      <div>
+        <input type="checkbox" name="t&c" id="t&c"/>
+        <label for="t&c">Agree to terms and conditions </label>
+      </div>
+      <br />
+      <div>
+        <label for="file">Choose File</label>
+        <input type="file" name="file" id="file" />
+      </div>
+      <br />
+      <div>
+        <label for="Color">Choose Color</label>
+        <input type="color" name="colo" id="Color" />
+      </div>
+      <br />
+      <div>
+        <label for="reset"></label>
+        <input type="reset" name="reset" id="reset" />
+        <label for="sumbit"></label>
+        <input type="submit" name="sub" id="sumbit" />
+      </div>
+      
+    </form>
+</fieldset>
+  </body>
+</html>
